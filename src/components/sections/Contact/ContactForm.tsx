@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 import { FiSend, FiCheck, FiAlertCircle } from 'react-icons/fi'
 import emailjs from '@emailjs/browser'
 
-const EMAILJS_SERVICE_ID = 'service_ytyyq2w'
-const EMAILJS_TEMPLATE_ID = 'template_b8hid3i'
-const EMAILJS_PUBLIC_KEY = '6OrONi4m-TDPg0W7m'
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 interface FormData {
   name: string
